@@ -95,6 +95,31 @@ time {
     margin: 2.125em 1em;
 }
 
+.blog-article{
+    display: block;
+    margin: 2em 1em;
+}
+
+.blog-article img {
+    width: 100%;
+}
+
+.profile {
+    width: 12rem;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+
+.intro {
+    display: block;
+    margin-bottom: 3em;
+}
+
+.recent-posts {
+    text-align: center;
+    font-weight: bold;
+}
+
 .view-more {
     display: block;
     text-align: center;
