@@ -95,12 +95,12 @@ time {
     margin: 2.125em 1em;
 }
 
-.blog-article{
+.blog-article {
     display: block;
     margin: 2em 1em;
 }
 
-.blog-article img {
+.article-img {
     width: 100%;
 }
 
@@ -110,9 +110,10 @@ time {
     margin-left: 1em;
 }
 
-.intro {
+.about-intro,
+.about-body {
     display: block;
-    margin-bottom: 3em;
+    margin: 2em 1em 3em;
 }
 
 .recent-posts {
@@ -126,6 +127,7 @@ time {
     font-weight: bold;
     color: black;
     margin: 3em;
+    grid-area: view-more;
 }
 
 footer {
@@ -142,50 +144,56 @@ footer p {
     padding: 0.25em;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 800px) {
 
+    .blog1 {
+        grid-area: blog1;
+    }
 
+    .blog2 {
+        grid-area: blog2;
+    }
 
+    .blog3 {
+        grid-area: blog3;
+    }
 
+    .blog4 {
+        grid-area: blog4;
+    }
 
-}
+    .blog5 {
+        grid-area: blog5;
+    }
 
-main {
-    /* display: grid;
-    grid-template-columns: 1fr;
+    .blog6 {
+        grid-area: blog6;
+    }
+
+    .blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
-        "hero"
-        "blog1"
-        "blog2"
-        "blog3"
-        "blog4"
-        "blog5"
-        "blog6";
-    width: 100%;
-    gap: 1em; */
+        "hero hero hero"
+        "blog1 blog2 blog3"
+        "blog4 blog5 blog6";
+    gap: 1em;
+    margin: 0 2em;
+}
+    .blog-card {
+        margin: 0;
+    }
+
+    .about-intro {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .about-body,
+    .blog-article {
+        margin: 2em 5em;
+    }
 }
 
 
-.blog1 {
-    grid-area: blog1;
-}
 
-.blog2 {
-    grid-area: blog2;
-}
-
-.blog3 {
-    grid-area: blog3;
-}
-
-.blog4 {
-    grid-area: blog4;
-}
-
-.blog5 {
-    grid-area: blog5;
-}
-
-.blog6 {
-    grid-area: blog6;
-}
